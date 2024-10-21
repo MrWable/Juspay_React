@@ -1,0 +1,130 @@
+.App {
+  text-align: center;
+  background-color: lavender;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: 'Lucida Sans', sans-serif;
+  font-size: 3rem;
+  color: rgb(52, 53, 53);
+  margin-bottom: 20px;
+  display: inline-block;
+  animation: oscillate 5s ease-in-out ;
+}
+@keyframes oscillate {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(20px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 20px;
+  flex-basis: 30%;
+}
+
+.control-frame {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #e6e6e6;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.control-frame input {
+  flex: 1;
+  margin-right: 10px;
+  padding: 3px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button-33 {
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button-33:hover {
+  background-color: #008fcc;
+}
+
+.action-buttons {
+  margin-top: 20px;
+}
+
+.reset-button {
+  background-color: #ff3300;
+}
+
+.reset-button:hover {
+  background-color: #cc2900;
+}
+
+.drop-zone {
+  flex-grow: 1;
+  padding: 20px;
+  border: 2px dashed #bbb;
+  border-radius: 10px;
+  text-align: center;
+  color: rgb(139, 210, 210);
+}
+
+.cat-container {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cat-image {
+  width: 150px;
+  height: auto;
+}
+
+h2
+{
+ color: rgb(202, 83, 160);
+}
+
+h2:hover
+{
+   font-size: xx-large;
+}
